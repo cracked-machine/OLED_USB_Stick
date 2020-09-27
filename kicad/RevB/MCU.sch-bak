@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	7800 3725 8450 3725
+	7800 3725 8725 3725
 Wire Wire Line
-	7800 3625 8450 3625
+	7800 3625 8725 3625
 Wire Wire Line
-	7800 3325 8450 3325
+	7800 3325 8050 3325
 Wire Wire Line
-	7800 3425 8450 3425
+	7800 3425 8350 3425
 NoConn ~ 7800 3525
 NoConn ~ 7800 3225
 NoConn ~ 7800 3125
@@ -31,13 +31,13 @@ NoConn ~ 7800 2725
 NoConn ~ 7800 3825
 NoConn ~ 7800 3925
 NoConn ~ 7800 4225
-Text HLabel 8450 3325 2    50   Input ~ 0
+Text HLabel 8725 3325 2    50   Input ~ 0
 I2C_SCL
-Text HLabel 8450 3425 2    50   Input ~ 0
+Text HLabel 8725 3425 2    50   Input ~ 0
 I2C_SDA
-Text HLabel 8450 3625 2    50   Input ~ 0
+Text HLabel 8725 3625 2    50   Input ~ 0
 USART_TX
-Text HLabel 8450 3725 2    50   Input ~ 0
+Text HLabel 8725 3725 2    50   Input ~ 0
 USART_RX
 $Comp
 L Device:C C6
@@ -381,8 +381,8 @@ U 1 1 5F6E45CF
 P 7300 3425
 AR Path="/5F6E45CF" Ref="U?"  Part="1" 
 AR Path="/5F6E342E/5F6E45CF" Ref="U3"  Part="1" 
-F 0 "U3" H 7750 4525 50  0000 C CNN
-F 1 "STM32F051K4Tx" H 7975 4400 50  0000 C CNN
+F 0 "U3" H 7625 4475 50  0000 C CNN
+F 1 "STM32F051K4Tx" H 7850 4375 50  0000 C CNN
 F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 6800 2525 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" H 7300 3425 50  0001 C CNN
 	1    7300 3425
@@ -447,4 +447,58 @@ Wire Wire Line
 	6350 2725 6700 2725
 Text Notes 5550 2175 0    50   ~ 0
 Tactile SPST salvaged\nfrom an old nano clone
+$Comp
+L Device:R R?
+U 1 1 5F70F57E
+P 8050 3075
+F 0 "R?" H 8120 3121 50  0000 L CNN
+F 1 "10K" H 8120 3030 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 3075 50  0001 C CNN
+F 3 "~" H 8050 3075 50  0001 C CNN
+	1    8050 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F70FAD9
+P 8350 3075
+F 0 "R?" H 8420 3121 50  0000 L CNN
+F 1 "10K" H 8420 3030 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8280 3075 50  0001 C CNN
+F 3 "~" H 8350 3075 50  0001 C CNN
+	1    8350 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F711644
+P 8350 2550
+AR Path="/5F711644" Ref="#PWR?"  Part="1" 
+AR Path="/5F6E342E/5F711644" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8350 2400 50  0001 C CNN
+F 1 "+3V3" H 8365 2723 50  0000 C CNN
+F 2 "" H 8350 2550 50  0001 C CNN
+F 3 "" H 8350 2550 50  0001 C CNN
+	1    8350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2550 8350 2825
+Wire Wire Line
+	8350 2825 8050 2825
+Wire Wire Line
+	8050 2825 8050 2925
+Connection ~ 8350 2825
+Wire Wire Line
+	8350 2825 8350 2925
+Wire Wire Line
+	8050 3225 8050 3325
+Connection ~ 8050 3325
+Wire Wire Line
+	8050 3325 8725 3325
+Wire Wire Line
+	8350 3225 8350 3425
+Connection ~ 8350 3425
+Wire Wire Line
+	8350 3425 8725 3425
 $EndSCHEMATC
