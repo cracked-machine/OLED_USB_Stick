@@ -1,4 +1,4 @@
-update=Sunday, 27 September 2020 at 13:11:32
+update=Sun 27 Sep 2020 19:19:13 BST
 version=1
 last_client=kicad
 [general]
@@ -244,7 +244,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=schema/
+PlotDirectoryName=schema
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

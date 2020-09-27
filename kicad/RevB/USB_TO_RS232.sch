@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -425,9 +425,9 @@ Wire Wire Line
 Wire Wire Line
 	2250 4050 2600 4050
 Text HLabel 7250 2800 2    50   Input ~ 0
-USART_TX
+FT232_RX
 Text HLabel 7250 2700 2    50   Input ~ 0
-USART_RX
+FT232_TX
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5F68EB2C
