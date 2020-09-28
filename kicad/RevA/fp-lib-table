@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name USB_Plug_ConnectorLess)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/CONNECTORS/USB/USB_Plug_ConnectorLess.pretty)(options "")(descr ""))
-  (lib (name JS_Series_Sub-Miniature_Slide_Switches)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/SWITCHES/JS_Series_Sub-Miniature_Slide_Switches/JS_Series_Sub-Miniature_Slide_Switches.pretty)(options "")(descr ""))
-)
