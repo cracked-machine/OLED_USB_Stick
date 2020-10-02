@@ -1,6 +1,8 @@
 
  ## OLED-USB Stick
 
+Related SW project: https://github.com/cracked-machine/OLED_USB_Stick_SW
+
 This project was an excuse to play with the FT232RL chips. I thought it would be fun to have a USB stick device that would:
 
 - Take input text from a TTY and send it to an OLED display
