@@ -18,7 +18,7 @@ There are four LEDs on the top. These indicate:
 - USB 5V bus power
 - USB Host suspend mode
 
-Note, the I2C connector has pull-up resistors on the SCL and SDA lines. These are not required when using the OLED module since they are included on the module already. However, adding the pull-up resistors allows a direct interface to the MCU I2C interface. So, if you omit the OLED display, you can talk directly to the onboard MCU using an external device via I2C.
+Note, the I2C connector has pull-up resistors (R6/R7) on the SCL and SDA lines. These are not required when using the OLED module since they are included on the module already. However, adding the pull-up resistors allows a direct interface to the MCU I2C interface. So, if you omit the OLED display, you can talk directly to the onboard MCU using an external device via I2C.
 
 U1 is the FTDI FT232RL and handles the USB->RS232 interface.
 
