@@ -29,6 +29,6 @@ U3 is the STM32F051 MCU. It's UART TX/RX IO pins are connected directly to the o
 ![](docs/systemdesign/OLED_USB_Stick_3DPCB_Bottom.png)
 
 
-There is also an optional LED on the back of the PCB to allow quick debug testing, as there is no access to the SWD debug interface.
+There is also an optional LED (D5) on the back of the PCB to allow quick debug testing, as there is no access to the SWD debug interface.
 
 Power to the MCU is provided via a SOT23 regulator which takes it input from the USB 5V bus.
