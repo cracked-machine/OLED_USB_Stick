@@ -1,6 +1,9 @@
 
  ## OLED-USB Stick
 
+
+Required Kicad Hardware library: https://github.com/cracked-machine/KicadLibrary
+
 Related SW project: https://github.com/cracked-machine/OLED_USB_Stick_SW
 
 This project was an excuse to play with the FT232RL chips. I thought it would be fun to have a USB stick device that would:
